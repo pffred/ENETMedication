@@ -1,0 +1,5 @@
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETClasses\bin\Debug\ENETClasses.dll
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETClasses\bin\Debug\ENETClasses.pdb
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETClasses\obj\Debug\ENETClasses.csprojResolveAssemblyReference.cache
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETClasses\obj\Debug\ENETClasses.dll
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETClasses\obj\Debug\ENETClasses.pdb

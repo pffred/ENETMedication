@@ -1,0 +1,5 @@
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETTests\bin\Debug\ENETTests.dll
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETTests\bin\Debug\ENETTests.pdb
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETTests\obj\Debug\ENETTests.csprojResolveAssemblyReference.cache
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETTests\obj\Debug\ENETTests.dll
+c:\users\shane\documents\visual studio 2013\Projects\ENETTests\ENETTests\obj\Debug\ENETTests.pdb
