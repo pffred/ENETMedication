@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace ENETClasses.Package
 {
-    class PackageItem
+    public class PackageItem
     {
+        private static int CurrentPackageNumber;
+        private static int GetNextPackageNumber { get { return CurrentPackageNumber++;  } }
+
         public int Count { get; set; }
         public int BarcodeNumber { get; private set; }
         public string Description { get; set; }
@@ -29,5 +32,12 @@ namespace ENETClasses.Package
         /// Where the package is currently residing.
         /// </summary>
         public ILocation Location { get; set; }
+
+        public PackageItem(int count, string description, AustralianDollar value)
+        {
+            Count = count;
+            Description = description;
+            ValuePerItem = value;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ENETClasses.Miscellaneous
 {
-    struct AustralianDollar
+    public struct AustralianDollar
     {
         public decimal Amount;
 
@@ -32,6 +32,9 @@ namespace ENETClasses.Miscellaneous
         public static bool operator <(AustralianDollar left, AustralianDollar right) { return left.Amount < right.Amount; }
         public static bool operator >=(AustralianDollar left, AustralianDollar right) { return left.Amount >= right.Amount; }
         public static bool operator <=(AustralianDollar left, AustralianDollar right) { return left.Amount <= right.Amount; }
+
+        public static implicit operator AustralianDollar(int number) { return new AustralianDollar((decimal)number);}
+        public static implicit operator AustralianDollar(double number) { return new AustralianDollar((decimal)number); }
 
         public override bool Equals(object obj) { return base.Equals(obj); }
     }

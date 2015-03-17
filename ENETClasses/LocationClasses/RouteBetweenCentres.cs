@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ENETClasses.LocationClasses
 {
-    class RouteBetweenCentres : ILocation
+    public class RouteBetweenCentres : ILocation
     {
         /// <summary>
         /// Where the package it's journey.
@@ -20,5 +20,16 @@ namespace ENETClasses.LocationClasses
         /// When the package was sent and began it's journey enroute to it's destination.
         /// </summary>
         public DateTime SendDate { get; set; }
+
+        public RouteBetweenCentres(DistributionCentre beginning, DistributionCentre end)
+        {
+            Origin = beginning;
+            Destination = end;
+        }
+
+        /// <summary>
+        /// Information output to reports that query this object.
+        /// </summary>
+        public string ReportOutput { get; set; }
     }
 }

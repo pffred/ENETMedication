@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ENETClasses.Employee
 {
-    abstract class Employee
+    public abstract class Employee
     {
         public string UserName { get; private set; }
         public string Password { get; private set; }
@@ -17,5 +17,12 @@ namespace ENETClasses.Employee
         public string EmailAddress { get; private set; }
 
         public DistributionCentre CentreOfWork { get; private set; }
+
+        public Employee(string firstname, string lastname, string username)
+        {
+            FirstName = firstname;
+            LastName = lastname;
+            UserName = username;
+        }
     }
 }
