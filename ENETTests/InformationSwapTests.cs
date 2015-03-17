@@ -44,6 +44,12 @@ namespace ENETTests
             Assert.AreEqual(emp1.Fullname, "John Doe");
         }
 
+        [TestMethod]
+        public void Reportable_GenerateReport_ReturnsReportType()
+        {
+            var centre = new DistributionCentre("Blank", "", "Nothing here");
+            var t = centre.GenerateReport<DistributionCentreStock>();
+        }
         
     }
 }
