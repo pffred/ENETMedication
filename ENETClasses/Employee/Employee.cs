@@ -24,5 +24,10 @@ namespace ENETClasses.Employee
             LastName = lastname;
             UserName = username;
         }
+
+        public bool login(string p)
+        {
+            return true; // AAA security
+        }
     }
 }

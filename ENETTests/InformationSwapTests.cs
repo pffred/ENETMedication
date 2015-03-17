@@ -13,57 +13,63 @@ namespace ENETTests
     public class InformationSwapTests
     {
 
-EnetSys _EnetSys;
+        private class EnetSys
+        {
+            public Employee _employee;
+            public ILocation _location;
+            public PackageItem _package;
+        }
+        EnetSys _EnetSys;
 
-            public TestContext TestContext { get; set; }
+        public TestContext TestContext { get; set; }
 
-            [TestInitialize]
-            public void Setup()
-            {
-                //sets up base program
-                _EnetSys = new EnetSys();
-            }
-
-
-            [TestMethod]
-            public void User_OnSetup_Exists()
-            {
-                //checks that a user exists
-                Assert.IsNotNull(_EnetSys._employee);   
-            }
+        [TestInitialize]
+        public void Setup()
+        {
+            //sets up base program
+            _EnetSys = new EnetSys();
+        }
 
 
-            [TestMethod]
-            public void Location_OnSetup_Exists()
-            {
-                //checks that a location exists
-                Assert.IsNotNull(_EnetSys._location);
-            }
+        [TestMethod]
+        public void User_OnSetup_Exists()
+        {
+            //checks that a user exists
+            Assert.IsNotNull(_EnetSys._employee);   
+        }
 
 
-            [TestMethod]
-            public void Package_OnSetup_Exists()
-            {
-                //checks that a package exists
-                Assert.IsNotNull(_EnetSys._package);
-            }
+        [TestMethod]
+        public void Location_OnSetup_Exists()
+        {
+            //checks that a location exists
+            Assert.IsNotNull(_EnetSys._location);
+        }
 
 
-            [TestMethod]
-            public void User_OnLogin_SuccessfulLogin()
-            {
-                //checks that a user can login
-                Assert.IsTrue(_EnetSys._employee.login("pass"));
-            }
+        [TestMethod]
+        public void Package_OnSetup_Exists()
+        {
+            //checks that a package exists
+            Assert.IsNotNull(_EnetSys._package);
+        }
 
 
-            [TestMethod]
-            public void User_OnLogin_HasAttributes()
-            {
-                //checks that a user has stats
-                Assert.IsNotNull(_EnetSys._employee.Fullname);
-                Assert.IsNotNull(_EnetSys._employee.EmailAddress);
-            }
+        [TestMethod]
+        public void User_OnLogin_SuccessfulLogin()
+        {
+            //checks that a user can login
+            Assert.IsTrue(_EnetSys._employee.login("pass"));
+        }
+
+
+        [TestMethod]
+        public void User_OnLogin_HasAttributes()
+        {
+            //checks that a user has stats
+            Assert.IsNotNull(_EnetSys._employee.Fullname);
+            Assert.IsNotNull(_EnetSys._employee.EmailAddress);
+        }
 
         [TestMethod]
         public void DistributionCentre_PackageValueOfPackages()
