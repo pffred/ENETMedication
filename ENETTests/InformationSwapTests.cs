@@ -69,6 +69,7 @@ namespace ENETTests
             //checks that a user has stats
             Assert.IsNotNull(_EnetSys._employee.Fullname);
             Assert.IsNotNull(_EnetSys._employee.EmailAddress);
+            Assert.IsNotNull(_EnetSys._employee.CentreOfWork);
         }
 
         [TestMethod]
