@@ -18,6 +18,13 @@ namespace ENETTests
             public Employee _employee;
             public ILocation _location;
             public PackageItem _package;
+
+            public EnetSys()
+            {
+                _employee = new Doctor("Bruce", "\"the pain\" Wayne", "whereisshe_thebombs");
+                _location = new DistributionCentre("Up", "Down", "1");
+                _package = new PackageItem(5000, "Sweet and Sour Pork", 13.95);
+            }
         }
         EnetSys _EnetSys;
 
