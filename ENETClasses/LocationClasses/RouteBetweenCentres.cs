@@ -11,7 +11,7 @@ namespace ENETClasses.LocationClasses
         /// <summary>
         /// Where the package it's journey.
         /// </summary>
-        public DistributionCentre Origin { get; set; }
+        public DistributionCentre Outset { get; set; }
         /// <summary>
         /// Where the package is expected to arrive at.
         /// </summary>
@@ -23,7 +23,7 @@ namespace ENETClasses.LocationClasses
 
         public RouteBetweenCentres(DistributionCentre beginning, DistributionCentre end)
         {
-            Origin = beginning;
+            Outset = beginning;
             Destination = end;
         }
 
